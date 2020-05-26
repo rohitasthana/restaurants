@@ -33,7 +33,7 @@ class Post
 			$this->mobile   =htmlspecialchars(strip_tags($this->mobile));
 			$this->branch   =htmlspecialchars(strip_tags($this->branch));
 			
-			//binding the paramaeters
+			//binding all paramaeters
 			
 			$stmt->bindParam(':name', $this->name);
 			$stmt->bindParam(':mobile', $this->mobile);
